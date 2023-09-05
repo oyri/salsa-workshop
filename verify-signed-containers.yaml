@@ -29,12 +29,12 @@ spec:
                 - Pod
       verifyImages:
         - imageReferences:
-            - "ttl.sh/<gh-user>/salsa-workshop*"
+            - "ttl.sh/oyri/salsa-workshop*"
             - "ghcr.io/nais/salsa-workshop*"
           attestors:
             - entries:
                 - keyless:
-                    subject: "https://github.com/<user>/salsa-workshop/*"
+                    subject: "https://github.com/oyri/salsa-workshop/*"
                     issuer: "https://token.actions.githubusercontent.com"
                     rekor:
                       url: https://rekor.sigstore.dev
